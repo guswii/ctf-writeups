@@ -22,7 +22,7 @@ i use this repo to document my journey — the challenges i solve, the rabbit ho
 
 | Platform | Category | Challenge | Write-up |
 |---|---|---|---|
-| — | — | Coming soon | — |
+| TryHards | — | Coming soon | — |
 
 ## my philosophy
 
