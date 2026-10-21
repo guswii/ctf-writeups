@@ -56,10 +56,10 @@ Files provided:
    ```bash
    steghide extract -sf photo.bmp
    ```
-   dan flagnya ada di file `_flag.txt` kalian bisa lihat dengan perintah:
+   Kalau berhasil flagnya ada di file `_flag.txt` kalian bisa lihat dengan perintah:
    ```bash
    cat _flag.txt
    ```
    
 ## Flagnya adalah:
-**TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}
+**TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}**
