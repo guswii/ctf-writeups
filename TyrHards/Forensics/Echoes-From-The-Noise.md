@@ -1,5 +1,4 @@
 # TryHards - [Echoes From The Noise](https://tryhards.community/challenges#Echoes%20from%20the%20Noise-9)
-
 * **Kategori:** Forensics
 * **Difficulty:** Easy
 
@@ -43,7 +42,6 @@ Files provided:
    s1390_Lsb_k3y
    ```
    Sandi ini kita gunakan untuk membuka file gambarnya nanti.
----
 
 4. **Mengekstrak data yang ada di `photo.bmp`**
    Buka Terminal dengan ``Ctrl + alt + T`` di Ubuntu, Sesuaikan dengan sistem operasi yang kalian gunakan.
@@ -60,6 +58,9 @@ Files provided:
    ```bash
    cat _flag.txt
    ```
+---
    
 ## Flagnya adalah:
 **TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}**
+---
+# Selamat Mencoba
