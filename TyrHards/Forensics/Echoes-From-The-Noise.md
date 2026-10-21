@@ -37,7 +37,14 @@ Files provided:
 
 ---
 
-## Vulnerability Identification (Identifikasi Celah)
+3. **Mengekstrak data yag ada di `recording.mav`**
+   Buka Software `Audacity` dan pilih file `recording.mav` kalian melihatnya biasa biasa saja kan???, Sandinya tersembunyi di track visualization, kita ubah track visualizationnya ke spectrogram dan sandinya sudah kelihatan yaitu:
+   
+   ```text
+   s1390_Lsb_k3y
+   ```
+   Sandi ini kita gunakan untuk membuka file gambarnya nanti.
+
 
 * Ditemukan adanya **SQL Injection (Classic / Boolean-based)** pada parameter `username` karena input langsung digabungkan (concatenation) ke dalam query string tanpa sanitasi atau *prepared statement*.
 
