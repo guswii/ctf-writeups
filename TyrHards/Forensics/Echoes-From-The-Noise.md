@@ -37,7 +37,7 @@ Files provided:
    ```text
    s1390_Lsb_k3y
    ```
-   ![ini adalah sandinya](../image/Screenshot_Audacity_kode_recordingmav.png)
+   ![ini adalah sandinya](TyrHards/Forensics/image/Screenshot_Audacity_kode_recordingmav.png)
    Sandi ini kita gunakan untuk membuka file gambarnya nanti.
 
 4. **Mengekstrak data yang ada di `photo.bmp`**
