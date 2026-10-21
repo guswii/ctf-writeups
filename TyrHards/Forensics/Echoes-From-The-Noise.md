@@ -44,10 +44,6 @@ Files provided:
    s1390_Lsb_k3y
    ```
    Sandi ini kita gunakan untuk membuka file gambarnya nanti.
-
-
-* Ditemukan adanya **SQL Injection (Classic / Boolean-based)** pada parameter `username` karena input langsung digabungkan (concatenation) ke dalam query string tanpa sanitasi atau *prepared statement*.
-
 ---
 
 ## Exploitation (Eksploitasi)
