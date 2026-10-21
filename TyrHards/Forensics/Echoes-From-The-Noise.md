@@ -56,7 +56,5 @@ Files provided:
    ```
 ---
    
-## Flagnya adalah:
-**TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}**
----
-# Selamat Mencoba
+**Flagnya adalah:**
+TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}
