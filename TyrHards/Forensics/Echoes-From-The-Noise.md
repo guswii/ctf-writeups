@@ -46,7 +46,7 @@ Files provided:
 ---
 
 4. **Mengekstrak data yang ada di `photo.bmp`**
-   Buka Comand Promt dengan ``Ctrl + alt + T`` di Ubuntu, Sesuaikan dengan sistem operasi yang kalian gunakan.
+   Buka Terminal dengan ``Ctrl + alt + T`` di Ubuntu, Sesuaikan dengan sistem operasi yang kalian gunakan.
    kalau belum terinstall `Steghide` install dengan perintah:
    ```bash
    sudo apt install steghide
