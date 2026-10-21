@@ -2,7 +2,6 @@
 * **Kategori:** Forensics
 * **Difficulty:** Easy
 
----
 
 ## Challenge Description
 
@@ -12,15 +11,12 @@
 Files provided:
 * `evidence.zip`
 
----
-
 ## Reconnaissance
 
 ### Tools yang Digunakan:
 * **Wireshark** - Untuk melihat traffic jaringan.
 * **Audacity** - Untuk menganalisis gelombang audio.
 * **Steghide** - Untuk mengekstrak data yang ada di file gambar.
----
 
 ## Analisis & Eksploitasi
 
