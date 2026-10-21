@@ -25,23 +25,15 @@ Files provided:
 ## Analisis & Eksploitasi
 
 1. **Ekstrak file evidence.zip:**
-   Saat mengekstrak file `evidence.zip`, kita mendapatkan file ini:
-   ```text
-   capture.pcap
-   ```
+   Saat mengekstrak file `evidence.zip`, kita mendapatkan file `capture.pcap`
    Buka file `capture.pcap` dengan Wireshark
 
 2. **Melihat Traffic jaringan dengan Wireshark (`capture.pcap`):**
-   Perhatikan bagian fungsi login yang rentan terhadap *SQL Injection* atau *Hardcoded Credentials*:
-   ```python
-   @app.route('/login', methods=['POST'])
-   def login():
-       username = request.form['username']
-       password = request.form['password']
-       # Vulnerability: query tidak di-escape dengan benar
-       query = f"SELECT * FROM users WHERE user = '{username}' AND pass = '{password}'"
-       ...
-   ```
+   Pada Bagian Fillter kita fillter traffic HTTP:
+   Disana kita melihat ada beberapa file, ada file `recording.mav` dan `photo.bmp`.
+   Kita Download file tersebut dengan cara:
+   -Klik File
+   -Eksport Obejct dan pilih HTTP lalu save all.
 
 ---
 
