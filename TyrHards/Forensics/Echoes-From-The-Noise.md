@@ -21,6 +21,7 @@ Files provided:
 * **Wireshark** - Untuk melihat traffic jaringan.
 * **Audacity** - Untuk menganalisis gelombang audio.
 * **Steghide** - Untuk mengekstrak data yang ada di file gambar.
+---
 
 ## Analisis & Eksploitasi
 
@@ -35,8 +36,6 @@ Files provided:
    -Klik File
    -Eksport Obejct dan pilih HTTP lalu save all.
 
----
-
 3. **Mengekstrak data yag ada di `recording.mav`**
    Buka Software `Audacity` dan pilih file `recording.mav` kalian melihatnya biasa biasa saja kan???, Sandinya tersembunyi di track visualization, kita ubah track visualizationnya ke spectrogram dan sandinya sudah kelihatan yaitu:
    
@@ -46,34 +45,21 @@ Files provided:
    Sandi ini kita gunakan untuk membuka file gambarnya nanti.
 ---
 
-## Exploitation (Eksploitasi)
-
-1. **Membuat payload uji coba:**
-   Kita mencoba memasukkan *payload* *bypass* standar pada form login:
-   ```text
-   username: ' OR 1=1 --
-   password: (kosongkan)
+4. **Mengekstrak data yang ada di `photo.bmp`**
+   Buka Comand Promt dengan ``Ctrl + alt + T`` di Ubuntu, Sesuaikan dengan sistem operasi yang kalian gunakan.
+   kalau belum terinstall `Steghide` install dengan perintah:
+   ```bash
+   sudo apt install steghide
    ```
-
-2. **Menjalankan script otomatis (opsional):**
-   Jika menggunakan script Python untuk *exploit*:
-   ```python
-   import requests
-
-   url = "http://ctf.local"
-   payload = {"username": "' OR 1=1 --", "password": ""}
-   r = requests.post(url, data=payload)
-
-   print(r.text)
+   kalau sudah selesai, masuk ke folder dimana kalian menyimpan file `photo.bmp`nya (Contoh: Kalau filenya ada di folder Download, masuk dengan perintah `cd Downloads`. **sesuaikan dengan lokasi folder**.
+   lalu jalankan perintah ini untuk mengekstrak data `photo.bmp`nya:
+   ```bash
+   steghide extract -sf photo.bmp
    ```
-
-3. **Hasil:**
-   Respon server mengembalikan halaman dashboard admin dan menampilkan *flag*:
-   > `CTF{contoh_flag_hasil_solve_12345}`
-
----
-
-## Kesimpulan / Lessons Learned
-
-* Selalu gunakan **Parameterized Queries** atau **ORM** untuk mencegah SQL Injection pada aplikasi web.
-
+   dan flagnya ada di file `_flag.txt` kalian bisa lihat dengan perintah:
+   ```bash
+   cat _flag.txt
+   ```
+   
+## Flagnya adalah:
+**TryHards{st3g0_4nd_f0r3ns1cs_comb1n3d}
