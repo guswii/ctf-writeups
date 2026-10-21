@@ -20,18 +20,19 @@ Files provided:
 
 ## Analisis & Eksploitasi
 
-1. **Ekstrak file evidence.zip:**
+1. **Ekstrak file evidence.zip:**<br>
    Saat mengekstrak file `evidence.zip`, kita mendapatkan file `capture.pcap`
    Buka file `capture.pcap` dengan Wireshark
 
-2. **Melihat Traffic jaringan dengan Wireshark (`capture.pcap`):**
+2. **Melihat Traffic jaringan dengan Wireshark (`capture.pcap`):**<br>
    Pada Bagian Fillter kita fillter traffic HTTP:
+   ![](../Forensics/image/Screenshot_Wireshark_fillter_http.png)
    Disana kita melihat ada beberapa file, ada file `recording.mav` dan `photo.bmp`.
    Kita Download file tersebut dengan cara:
    -Klik File
    -Eksport Obejct dan pilih HTTP lalu save all.
 
-3. **Mengekstrak data yag ada di `recording.mav`**
+4. **Mengekstrak data yag ada di `recording.mav`**<br>
    Buka Software `Audacity` dan pilih file `recording.mav` kalian melihatnya biasa biasa saja kan???, Sandinya tersembunyi di track visualization, kita ubah track visualizationnya ke spectrogram dan sandinya sudah kelihatan yaitu:
    
    ```text
@@ -40,7 +41,7 @@ Files provided:
    ![ini adalah sandinya](../Forensics/image/Screenshot_Audacity_kode_recordingmav.png)
    Sandi ini kita gunakan untuk membuka file gambarnya nanti.
 
-4. **Mengekstrak data yang ada di `photo.bmp`**
+5. **Mengekstrak data yang ada di `photo.bmp`**<br>
    Buka Terminal dengan ``Ctrl + alt + T`` di Ubuntu, Sesuaikan dengan sistem operasi yang kalian gunakan.
    kalau belum terinstall `Steghide` install dengan perintah:
    ```bash
